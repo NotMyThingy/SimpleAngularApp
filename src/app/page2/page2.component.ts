@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page2Component implements OnInit {
 
+  hits = 0
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  incrementHitCounter() {
+    this.hits += 1
   }
 
 }
